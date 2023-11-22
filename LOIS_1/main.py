@@ -62,12 +62,12 @@ def check_file():
 
 def check_mode():
     flag = ""
-    while flag != "n" or flag != "no":
+    while flag != "n" and flag != "no":
         formula_1 = input("Введите первую формулу\n")
         formula_2 = input("Введите вторую формулу\n")
         try:
-            checking_formula(formula_1)
-            checking_formula(formula_2)
+            check_formula(formula_1)
+            check_formula(formula_2)
             unclear_coverage_maker = UnclearCoverageMaker(formula_1, formula_2)
             set_1 = unclear_coverage_maker.conclusion()
             print(set_1)
@@ -87,4 +87,3 @@ if __name__ == '__main__':
             check_mode()
         elif choice == '4':
             break
-# /\ - and  \/ - or  ! - not  -> - implication  ~ - equal

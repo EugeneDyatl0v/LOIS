@@ -1,5 +1,3 @@
-from antlr4 import InputStream, CommonTokenStream, ParseTreeWalker
-from gen.unclear_coverageLexer import unclear_coverageLexer
 from gen.unclear_coverageParser import unclear_coverageParser
 from gen.unclear_coverageListener import unclear_coverageListener
 

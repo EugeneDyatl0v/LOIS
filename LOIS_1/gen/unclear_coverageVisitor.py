@@ -1,6 +1,6 @@
-# Generated from C:/Users/evgen/PycharmProjects/LOIS_1\unclear_coverage.g4 by ANTLR 4.12.0
+# Generated from D:/LOIS/LOIS/LOIS_1/unclear_coverage.g4 by ANTLR 4.13.1
 from antlr4 import *
-if __name__ is not None and "." in __name__:
+if "." in __name__:
     from .unclear_coverageParser import unclear_coverageParser
 else:
     from unclear_coverageParser import unclear_coverageParser

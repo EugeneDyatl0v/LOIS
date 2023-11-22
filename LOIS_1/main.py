@@ -65,10 +65,11 @@ def check_mode():
     while flag != "n" and flag != "no":
         formula_1 = input("Введите первую формулу\n")
         formula_2 = input("Введите вторую формулу\n")
+        premise = input("Введите посылку\n")
         try:
             check_formula(formula_1)
             check_formula(formula_2)
-            unclear_coverage_maker = UnclearCoverageMaker(formula_1, formula_2)
+            unclear_coverage_maker = UnclearCoverageMaker(formula_1, formula_2, premise)
             set_1 = unclear_coverage_maker.conclusion()
             print(set_1)
             flag = input("желаете продолжить? (y/n) \n")

@@ -3,7 +3,6 @@ from gen.unclear_coverageLexer import unclear_coverageLexer
 from gen.unclear_coverageParser import unclear_coverageParser
 from src.FormulaListener import FormulaListener
 
-
 class FormulaParser:
     @staticmethod
     def parse_formula(input_str):

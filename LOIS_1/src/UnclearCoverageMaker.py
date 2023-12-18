@@ -1,10 +1,13 @@
 from src.FormulaParser import FormulaParser
 
 
+class TUPLEException(RuntimeError):
+    pass
+
 class UnclearCoverageMaker:
 
     def t_norm(self, v1, v2):
-        return min(v1, v2)
+        return v1 * v2
 
     def __init__(self, formula_1: str, formula_2: str, premise: str):
         self.tuples_of_formula_1 = FormulaParser.parse_formula(formula_1)
@@ -26,11 +29,11 @@ class UnclearCoverageMaker:
 
     def conclusion(self):
         conl_set = []
-        for i in self.relation:
+        for i in range(len(self.relation[0])):
             l = []
-            for j in self.relation[i]:
-                v_set = self.premise[i][1]
-                v_impl = self.relation[i][j]
+            for j in range(len(self.relation)):
+                v_set = self.premise[j][1]
+                v_impl = self.relation[j][i]
                 l.append(self.t_norm(v_set, v_impl))
             value = max(l)
             conl_set.append((self.tuples_of_formula_2[i][0], value))

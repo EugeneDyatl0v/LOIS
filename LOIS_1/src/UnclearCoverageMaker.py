@@ -4,6 +4,7 @@ from src.FormulaParser import FormulaParser
 class TUPLEException(RuntimeError):
     pass
 
+
 class UnclearCoverageMaker:
 
     def t_norm(self, v1, v2):

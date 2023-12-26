@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e227a5b7-0b44-4b24-b87d-ac90165bd61d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOIS_2/input" beforeDir="false" afterPath="$PROJECT_DIR$/LOIS_2/input" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOIS_2/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/LOIS_2/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOIS_2/src/fun/Thinker.py" beforeDir="false" afterPath="$PROJECT_DIR$/LOIS_2/src/fun/Thinker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOIS_2/src/util/Checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/LOIS_2/src/util/Checker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lois/Lab_2/input" beforeDir="false" afterPath="$PROJECT_DIR$/Lois/Lab_2/input" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lois/Lab_2/output" beforeDir="false" afterPath="$PROJECT_DIR$/Lois/Lab_2/output" afterDir="false" />
-    </list>
+    <list default="true" id="e227a5b7-0b44-4b24-b87d-ac90165bd61d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +18,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Lois" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -99,7 +91,7 @@
       <workItem from="1703110136067" duration="368000" />
       <workItem from="1703534436213" duration="2742000" />
       <workItem from="1703540587239" duration="4723000" />
-      <workItem from="1703587544989" duration="2631000" />
+      <workItem from="1703587544989" duration="3030000" />
     </task>
     <servers />
   </component>
@@ -107,35 +99,6 @@
     <option name="version" value="3" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Lois/Lab_2/main.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Lois/Lab_2/main.py</url>
-          <line>32</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Lois/Lab_2/functions.py</url>
-          <line>118</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Lois/Lab_2/functions.py</url>
-          <line>54</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Lois/Lab_2/main.py</url>
-          <line>58</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="el" />

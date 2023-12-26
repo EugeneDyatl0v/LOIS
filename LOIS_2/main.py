@@ -3,6 +3,7 @@ import pprint
 from src.fun.Thinker import Thinker
 from src.util.Checker import Checker
 from src.util.FileReader import FileWorker
+from src.util.PrettyWriter import PrettyWriter
 
 
 def pretty_print(obj, indent=0):
@@ -26,10 +27,7 @@ if __name__ == '__main__':
             thinker = Thinker(start_consequence, start_relation)
             thinker.solve_rows()
             li = thinker.find_all_intervals()
-            for el in li:
-                sorted_dict = {key: el[key] for key in sorted(el)}
-
-                print(sorted_dict)  # возвращает интервалы значений когда все выполняется
+            PrettyWriter.print(li)  # возвращает интервалы значений когда все выполняется
         except Exception as e:
             print(f'{e}')
 

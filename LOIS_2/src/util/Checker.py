@@ -15,16 +15,16 @@ class Checker:
         if fullmatch(r'\w{1}\d{1}:(0.\d+|0|1)(,\w{1}\d{1}:(0.\d+|0|1))*', consequence):
             pass
         else:
-            print(f"Неправильный формат ввода следствия. Вывод невозможен.")
+            raise Exception(f"Неправильный формат ввода следствия. Вывод невозможен.")
         relation = start_relation.replace(" ", "").rstrip()
         try:
             relation = json.loads(relation)
         except:
-            print(f"Неправильный формат ввода отношения. Вывод невозможен.")
+            raise Exception(f"Неправильный формат ввода отношения. Вывод невозможен.")
 
         consequence = Checker.consequence_to_variables(consequence)
         if len(consequence) != len(relation):
-            print("Невозможно построить матрицу. Вывод невозможен.")
+            raise Exception("Невозможно построить матрицу. Вывод невозможен.")
 
         return relation, consequence
 

@@ -18,12 +18,20 @@ def pretty_print(obj, indent=0):
 
 
 if __name__ == '__main__':
-    choice = int(input("Выберите номер следствия и отношения для нахождения обратного нечёткого логического вывода\n-1 для выхода \n--->"))
-    start_consequence, start_relation = FileWorker.read(choice)
-    start_consequence, start_relation = Checker.check_input(start_consequence, start_relation)
-    thinker = Thinker(start_consequence, start_relation)
-    thinker.solve_rows()
-    pprint.pprint(thinker.find_all_intervals()) # возвращает интервалы значений когда все выполняется
+    while True:
+        try:
+            choice = int(input("Выберите номер следствия и отношения для нахождения обратного нечёткого логического вывода\n"))
+            start_consequence, start_relation = FileWorker.read(choice)
+            start_consequence, start_relation = Checker.check_input(start_consequence, start_relation)
+            thinker = Thinker(start_consequence, start_relation)
+            thinker.solve_rows()
+            li = thinker.find_all_intervals()
+            for el in li:
+                sorted_dict = {key: el[key] for key in sorted(el)}
+
+                print(sorted_dict)  # возвращает интервалы значений когда все выполняется
+        except Exception as e:
+            print(f'{e}')
 
 
 
